@@ -44,7 +44,7 @@ class StravaController:
         sleep(2)
         self.find_by_arbitrary_and_send_keys(By.XPATH, './/*[@data-cy="email"]', self.secrets["STRAVA_EMAIL"])
         sleep(2)
-        self.find_by_arbitrary_and_click(By.XPATH, "/html/body/div/div[2]/div[2]/div[2]/div/div/div[5]/button") # Click 'Use password'
+        self.find_by_arbitrary_and_click(By.XPATH, "//button[text()='Use password instead']") # Click 'Use password'
         sleep(2)
         self.find_by_arbitrary_and_send_keys(By.XPATH, './/*[@data-cy="password"]', self.secrets["STRAVA_PASSWORD"])
         sleep(1)
